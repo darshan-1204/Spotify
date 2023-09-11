@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/begin_bg"
+    android:padding="16dp"
+    tools:context=".BeginActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_above="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_170sdp"
+        android:src="@drawable/spotify" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_70sdp"
+        android:gravity="center"
+        android:text="Millions of songs.\nFree on Spotify."
+        android:textColor="@color/white"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_above="@id/txtLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:backgroundTint="#1ED760"
+        android:text="Sign up free"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp" />
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:text="Log in"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
